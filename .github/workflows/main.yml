@@ -1,0 +1,25 @@
+name: Amavtron
+
+on:
+    push:
+        branches:
+            - master
+
+    jobs:
+        build:
+            runs-on: ubuntu-latest
+        steps: 
+                - name: checkout do repositorio     use: actions/checkout@1 
+                - name: Deploy para meu hosting
+        uses: easingthemes/ssh-deploy@main
+    env: 
+            SSH_PRIVATE_KEY: ${{secrets.SERVER_SSH_KEY}}
+            ARGS: "-rltgoDzvo --delete"
+            SOURCE: "dist/"
+            REMOTE_HOST: ${{secrets.REMOTE_HOST}}
+            REMOTE_USER: ${{secrets.REMOTE_USER}}
+            TARGET: ${{secrets.REMOTE_TARGET}}
+
+
+
+

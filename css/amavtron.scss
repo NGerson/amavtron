@@ -1,0 +1,210 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Abel;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+/* top-bar */
+.top-bar {
+    background: #282828;
+    min-height: 40px;
+}
+
+.top-bar .top {
+    margin-top: 7px;
+    color: #fff;
+}
+
+.top-bar i {
+    color: #fff;
+    font-weight: 300;
+    line-height: 25px;
+    margin-right: 9px;
+}
+
+.top-bar .fa {
+    color: #ffd42a;
+    margin-right: 6px;
+}
+
+.top-bar ul li {
+    margin-right: 15px;
+}
+
+.social {
+    padding: 8px 0;
+}
+
+.social .fa {
+    font-size: 14px;
+    color: #fff;
+}
+
+.top-bar .list-inline li {
+    float: left;
+}
+
+/* navigation2 */
+/* *** Navigation Menu **** */
+.nav__bar .navbar {
+    background: #3498db;
+    padding: 0;
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+    border-bottom: 1px solid #898989;
+}
+
+.nav__bar .navbar-brand {
+    background-color: none;
+    height: 75px;
+    position: absolute;
+    top: 10px;
+    left: 15PX;
+}
+
+.nav__bar .navbar-brand img {
+    height: 100%;
+    -webkit-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+
+@media (max-width: 768px) {
+    .nav__bar .navbar-brand {
+        /* height: 61px */
+    }
+
+    .nav__bar .navbar-brand img {
+        height: 75%;
+    }
+
+    .nav__bar .navbar .navbar-nav > li {
+        padding: 10px 0px 10px 10px !important;
+    }
+}
+
+.nav__bar .navbar .navbar-toggler,
+.nav__bar .navbar .navbar-toggler:focus,
+.nav__bar .navbar .navbar-toggler:hover {
+    background: none;
+    color: white;
+    border: 1px;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+.nav__bar .navbar .navbar-nav > .active {
+    color: #ffd42a;
+    background: none;
+}
+
+.nav__bar .navbar .navbar-nav > .active > a {
+    color: #282828 !important;
+    background: none;
+}
+
+.nav__bar .navbar .navbar-nav > .active > a:hover,
+.nav__bar .navbar .navbar-nav > .active > a:focus {
+    color: #fff;
+    background: none;
+}
+
+.nav__bar .navbar .navbar-nav > li {
+    padding: 10px 0;
+}
+
+.nav__bar .navbar .navbar-nav > li > a,
+.nav__bar .navbar .navbar-nav > li > a:focus {
+    color: #fff !important;
+    background: none;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.nav__bar .navbar .navbar-nav > li > a:hover {
+    color: #000000 !important;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background-color: rgba(255, 255, 255, 0.45);
+}
+
+.nav__bar .navbar .navbar-collapse,
+.navbar .navbar-form {
+    border-color: #e7e7e7;
+}
+
+.nav__bar .navbar-collapse {
+    border-top: 1px solid #fff;
+}
+
+.nav__bar .dropdown-item {
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+.nav__bar .dropdown-item:hover,
+.nav__bar .dropdown-item:focus {
+    color: #000000;
+    text-decoration: none;
+    background-color: #6dbef4;
+}
+
+.nav__bar .dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.navbar > .container,
+.navbar > .container-fluid {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+#top {
+    text-align: center;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0px;
+    right: 20px;
+    width: 40px;
+    height: 50px;
+    border-radius: 70px 70px 0 0;
+    background-image: url('../images/gotop_icon.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: 9999999999999999999;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    opacity: 0;
+    background-color: #4a83af;
+}
+
+#top.active {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
