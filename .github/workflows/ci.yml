@@ -8,7 +8,8 @@ jobs:
     build:
         runs-on: ubuntu-latest
         steps: 
-        - name: Checkout repositorio    uses: actions/Checkout
+        - name: Repositorio   
+         uses: actions/Checkout@v1
         - name:
             uses: easingthemes/ssh-deploy@main   
             env:
