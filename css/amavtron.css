@@ -184,109 +184,11 @@ body {
  * copyright 2023 Luis Duarte
  */
 
-:root {
 
-    /**
-     * COLORS
-     */
-  
-    --gold-crayola: hsl(38, 61%, 73%);
-    --quick-silver: hsla(0, 0%, 65%, 1);
-    --davys-grey: hsla(30, 3%, 34%, 1);
-    --smoky-black-1: hsla(40, 12%, 5%, 1);
-    --smoky-black-2: hsla(30, 8%, 5%, 1);
-    --smoky-black-3: hsla(0, 3%, 7%, 1);
-    --eerie-black-1: hsla(210, 4%, 9%, 1);
-    --eerie-black-2: hsla(210, 4%, 11%, 1);
-    --eerie-black-3: hsla(180, 2%, 8%, 1);
-    --eerie-black-4: hsla(0, 0%, 13%, 1);
-    --white: hsla(0, 0%, 100%, 1);
-    --white-alpha-20: hsla(0, 0%, 100%, 0.2);
-    --white-alpha-10: hsla(0, 0%, 100%, 0.1);
-    --black: hsla(0, 0%, 0%, 1);
-    --black-alpha-80: hsla(0, 0%, 0%, 0.8);
-    --black-alpha-15: hsla(0, 0%, 0%, 0.15);
-  
-    /**
-     * GRADIENT COLOR
-     */
-  
-    --loading-text-gradient: linear-gradient(90deg, transparent 0% 16.66%, var(--smoky-black-3) 33.33% 50%,  transparent 66.66% 75%);
-    --gradient-1: linear-gradient(to top,hsla(0, 0%, 0%, 0.9),hsla(0, 0%, 0%, 0.7),transparent);
-  
-    /**
-     * TYPOGRAPHY
-     */
-  
-    /* font-family */
-    --fontFamily-forum: 'Forum', cursive;
-    --fontFamily-dm_sans: 'DM Sans', sans-serif;
-  
-    /* font-size */
-    --fontSize-display-1: calc(1.3rem + 6.7vw);
-    --fontSize-headline-1: calc(2rem + 2.5vw);
-    --fontSize-headline-2: calc(1.3rem + 2.4vw);
-    --fontSize-title-1: calc(1.6rem + 1.2vw);
-    --fontSize-title-2: 2.2rem;
-    --fontSize-title-3: 2.1rem;
-    --fontSize-title-4: calc(1.6rem + 1.2vw);
-    --fontSize-body-1: 2.4rem;
-    --fontSize-body-2: 1.6rem;
-    --fontSize-body-3: 1.8rem;
-    --fontSize-body-4: 1.6rem;
-    --fontSize-label-1: 1.4rem;
-    --fontSize-label-2: 1.2rem;
-  
-    /* font-weight */
-    --weight-regular: 400;
-    --weight-bold: 700;
-
-    /**
-     * SPACING
-     */
-  
-    --section-space: 70px;  
-    /**
-     * TRANSITION
-     */
-  
-    --transition-1: 250ms ease;
-    --transition-2: 500ms ease;
-    --transition-3: 1000ms ease;
-  
-  }
-  
-  
-  
-  
-  
+   
   /*-----------------------------------*\
     #RESET
   \*-----------------------------------*/
-  
-  *,
-  *::before,
-  *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  li { list-style: none; }
-  
-  
-  body {
-    background-color: var(--eerie-black-1);
-    color: var(--white);
-    font-family: var(--fontFamily-dm_sans);
-    font-size: var(--fontSize-body-4);
-    font-weight: var(--weight-regular);
-    line-height: var(--lineHeight-5);
-    overflow: hidden;
-    height: 300vh;
-  }
-  
-  body.loaded { overflow: overlay; }
   
   
   
@@ -295,22 +197,7 @@ body {
   \*-----------------------------------*/
   
 
-  .text-center { text-align: center; }
   
-  .img-cover {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .section-subtitle {
-    position: relative;
-    color: var(--gold-crayola);
-    font-weight: var(--weight-bold);
-    text-transform: uppercase;
-    letter-spacing: var(--letterSpacing-2);
-    margin-block-end: 12px;
-  }
   
   
   /*-----------------------------------*\
