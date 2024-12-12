@@ -394,7 +394,8 @@ textarea:focus {
 
 /* GRID 1 */
 .box-pages {
-    padding-left: 1px!important;
+    padding-left: 1px!important
+    ;
 }
 
 .disable-mouse {
