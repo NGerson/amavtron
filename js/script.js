@@ -1,23 +1,12 @@
-$(function () {
-
-
-    //HEADER
-    $(window).scroll(function () {
-          if($(this).scrollTop() > 200)
-          {
-              if (!$('.main_header').hasClass('fixed'))
-              {
-                  $('.main_header').stop().addClass('fixed').css('top', '-100px').animate(
-                      {
-                          'top': '0px'
-                      }, 500);
-              }
-          }
-          else
-          {
-              $('.main_header').removeClass('fixed');
-          }
+document.addEventListener('DOMContentLoaded', () => {
+  const elements = document.querySelectorAll('.animate-on-scroll');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
     });
+  }, { threshold: 0.1 });
 
-
+  elements.forEach(el => observer.observe(el));
 });
